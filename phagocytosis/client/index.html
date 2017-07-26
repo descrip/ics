@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<meta charset="UTF-8">
+	<head>
+	<!--<link href='http://fonts.googleapis.com/css?family=Ubuntu:700' rel='stylesheet' type='text/css'>-->
+		<link rel="stylesheet" href="/css/main.css" />
+		<title>Phagocytosis</title>
+	</head>
+	<body class="main">
+		<div id="gameAreaWrapper" style="display:none;">
+			<canvas id="game-canvas"></canvas>
+		</div>
+	    <div id="startMenuWrapper">
+			<div id="startMenu">
+				<p>Phagocytosis</p>
+				<input type="text" tabindex="0" autofocus placeholder="Enter a username" id="playerNameInput" />
+				<br />
+				<b class="input-error">Username length must be less than 15 characters.</b>
+				<button id="startButton">Play</button>
+				<br/>
+				<h3>Instructions</h3>
+				<ul>
+					<li>You are a cell that can perform phagocytosis. Become the fattest of them all.</li>
+					<li>Mouse to move!</li>
+					<li>Grow larger by eating food on the ground and other cells smaller than you.</li>
+					<li>Space to split and send a piece of yourself flying. Don't worry, you'll merge eventually.</li>
+					<li>W to eject a part of you away that can be absorbed by others.</li>
+					<li>Don't touch a spiky green cell thing, they will split you up. Ejecting some mass to one will make another.</li>
+				</ul>
+			</div>
+		</div>
+		<script src="/socket.io/socket.io.js"></script>
+		<script src="./js/jquery.min.js"></script>
+		<script src="./js/app.js"></script>
+	</body>
+</html>

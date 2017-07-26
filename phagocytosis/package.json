@@ -1,0 +1,12 @@
+{
+	"name": "Phagocytosis",
+	"description": "WIP",
+	"dependencies": {
+		"socket.io": "latest",
+		"express": "latest"
+	},
+	"scripts": {
+		"start": "node server/server.js"
+	},
+	"author": "Jeffrey Zhao"
+}
